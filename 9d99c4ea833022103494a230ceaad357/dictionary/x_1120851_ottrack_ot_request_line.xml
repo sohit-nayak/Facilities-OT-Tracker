@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="809e0866837022103494a230ceaad3b4" label="OT Request Line" max_length="40" name="x_1120851_ottrack_ot_request_line" type="collection">
+        <element label="Selected" max_length="40" name="selected" type="boolean"/>
+        <element label="Hours Worked" max_length="20" name="hours_worked" type="decimal"/>
+        <element label="Cumulative OT Hours" max_length="20" name="cumulative_ot_hours" type="decimal"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Skip Reason" max_length="500" name="skip_reason" type="string"/>
+        <element choice="1" default="Pending" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="Pending"/>
+                <element inactive_on_update="false" label="Included" sequence="2" value="Included"/>
+                <element inactive_on_update="false" label="Skipped" sequence="3" value="Skipped"/>
+            </choice>
+        </element>
+        <element label="OT Request" max_length="32" name="ot_request" reference="x_1120851_ottrack_ot_request" type="reference"/>
+        <element label="Skip?" max_length="40" name="skip" type="boolean"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="ot_request"/>
+        </index>
+    </element>
+</database>

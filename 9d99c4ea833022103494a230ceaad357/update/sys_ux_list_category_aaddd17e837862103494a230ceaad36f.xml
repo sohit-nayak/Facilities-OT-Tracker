@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Facilities OT Tracker_menu_config">66ddd17e837862103494a230ceaad36d</configuration>
+        <description/>
+        <order>100</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 23:30:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aaddd17e837862103494a230ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OT Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_list_category_aaddd17e837862103494a230ceaad36f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 23:30:25</sys_updated_on>
+        <title>OT Request</title>
+    </sys_ux_list_category>
+</record_update>

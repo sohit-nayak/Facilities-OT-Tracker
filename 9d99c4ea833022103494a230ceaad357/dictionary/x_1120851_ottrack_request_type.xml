@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="44a46513834922103494a230ceaad39d" label="Request Type" max_length="40" name="x_1120851_ottrack_request_type" type="collection">
+        <element label="request color" max_length="40" name="request_color" type="color"/>
+        <element display="true" label="request" max_length="40" name="request" type="string"/>
+    </element>
+</database>

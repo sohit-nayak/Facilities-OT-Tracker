@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">0d925d7b057c221060c7c7b73c38546a</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 01:15:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd925d7bbc7c2210ec7d0857433e1a6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>m2m_app_config_theme_cd925d7bbc7c2210ec7d0857433e1a6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 01:15:06</sys_updated_on>
+        <theme display_value="Light Theme">45925d7bcd7c2210247967631383e96b</theme>
+        <ux_app_configuration display_value="Create OT Request App Config">f8925d7b387c22105243812583245927</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="Facilities OT Tracker">26915d7e633862105dc73609f756d61b</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 22:36:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>26915d7ebb386210aa75ac0fef57940b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_page_property_26915d7ebb386210aa75ac0fef57940b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 22:36:57</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1120851_ottrack.26915d7e633862105dc73609f756d61b.root.global.listConfigId</unique_name>
+        <value>df919d7e833862103494a230ceaad325</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=26915d7ebb386210aa75ac0fef57940b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</application>
+        <file_path/>
+        <instance_id>c1fba3aa1b818ed4c82acb7b234bcb4a</instance_id>
+        <instance_name>dev249573</instance_name>
+        <name>sys_ux_page_property_26915d7ebb386210aa75ac0fef57940b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>listConfigId</name><page display_value="Facilities OT Tracker">26915d7e633862105dc73609f756d61b</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-12 22:36:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>26915d7ebb386210aa75ac0fef57940b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>listConfigId</sys_name><sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package><sys_policy/><sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope><sys_update_name>sys_ux_page_property_26915d7ebb386210aa75ac0fef57940b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-12 22:36:57</sys_updated_on><type>string</type><unique_name>x_1120851_ottrack.26915d7e633862105dc73609f756d61b.root.global.listConfigId</unique_name><value>df919d7e833862103494a230ceaad325</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=26915d7ebb386210aa75ac0fef57940b"/></record_update>]]></payload>
+        <payload_hash>-1224137113</payload_hash>
+        <record_name>listConfigId</record_name>
+        <reverted_from/>
+        <source>d59948ae833022103494a230ceaad3be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 22:36:58</sys_created_on>
+        <sys_id>e3919d7e833862103494a230ceaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1962c261f400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 22:36:58</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>ab919d7ed03862100fc5033bee24356c</update_guid>
+        <update_guid_history>ab919d7ed03862100fc5033bee24356c:-1224137113,63919d7ed438621044b41eb30b0ee46b:-797368210</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 23:29:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>267b18eb14f64d67a7046c3fe0fe2929</sys_id>
+        <sys_metadata>26915d7ebb386210aa75ac0fef57940b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_scope_delete display_value="">5ab02171ad8d422caef6c441fef48390</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_26915d7ebb386210aa75ac0fef57940b</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_26915d7ebb386210aa75ac0fef57940b">e3919d7e833862103494a230ceaad36d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 23:29:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

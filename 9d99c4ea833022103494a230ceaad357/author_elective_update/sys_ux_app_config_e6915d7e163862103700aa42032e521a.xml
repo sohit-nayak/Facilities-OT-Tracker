@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config">
+    <sys_ux_app_config action="DELETE">
+        <active>true</active>
+        <custom_icon/>
+        <default_route_type/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <encode_query_string>false</encode_query_string>
+        <icon/>
+        <landing_path>home</landing_path>
+        <name>Facilities OT Tracker App Config</name>
+        <prefetch_limits/>
+        <sys_class_name>sys_ux_app_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 22:36:54</sys_created_on>
+        <sys_id>e6915d7e163862103700aa42032e521a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Facilities OT Tracker App Config</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_app_config_e6915d7e163862103700aa42032e521a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 22:36:54</sys_updated_on>
+    </sys_ux_app_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</application>
+        <file_path/>
+        <instance_id>c1fba3aa1b818ed4c82acb7b234bcb4a</instance_id>
+        <instance_name>dev249573</instance_name>
+        <name>sys_ux_app_config_e6915d7e163862103700aa42032e521a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config"><sys_ux_app_config action="INSERT_OR_UPDATE"><active>true</active><custom_icon/><default_route_type/><description/><disable_auto_reflow>false</disable_auto_reflow><encode_query_string>false</encode_query_string><icon/><landing_path>home</landing_path><name>Facilities OT Tracker App Config</name><prefetch_limits/><sys_class_name>sys_ux_app_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-12 22:36:54</sys_created_on><sys_id>e6915d7e163862103700aa42032e521a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Facilities OT Tracker App Config</sys_name><sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package><sys_policy/><sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope><sys_update_name>sys_ux_app_config_e6915d7e163862103700aa42032e521a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-12 22:36:54</sys_updated_on></sys_ux_app_config></record_update>]]></payload>
+        <payload_hash>508740540</payload_hash>
+        <record_name>Facilities OT Tracker App Config</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 23:29:13</sys_created_on>
+        <sys_id>4d9d1d3e837862103494a230ceaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1962c55f7790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 23:29:13</sys_updated_on>
+        <type>UX App Configuration</type>
+        <update_guid>0d9d1d3eee786210186b4b1d723b94fd</update_guid>
+        <update_guid_history>0d9d1d3eee786210186b4b1d723b94fd:508740540</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 23:29:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_config">sys_ux_app_config</sys_db_object>
+        <sys_id>2c55870009ad4cb890561d46f52e3c40</sys_id>
+        <sys_metadata>e6915d7e163862103700aa42032e521a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Facilities OT Tracker App Config</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_scope_delete display_value="">5ab02171ad8d422caef6c441fef48390</sys_scope_delete>
+        <sys_update_name>sys_ux_app_config_e6915d7e163862103700aa42032e521a</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_config_e6915d7e163862103700aa42032e521a">4d9d1d3e837862103494a230ceaad3fd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 23:29:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

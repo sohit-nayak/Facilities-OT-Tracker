@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1120851_ottrack.Create OT Request Line for shop employees</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>Data Resource to create OT request lines for each employee in the selected shop with cumulative hours calculated from OT Log and display it to the supervisor</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Create OT Request Line for shop employees</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "requestID",&#13;
+    "label": "Request ID",&#13;
+    "description": "",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Request ID",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform (input) {
+	
+	var final_name = input.requestID + " This has been receieved from the server. Yay!";
+	return final_name;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-29 16:25:53</sys_created_on>
+        <sys_id>7b3d5300835926103494a230ceaad3ea</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create OT Request Line for shop employees</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_7b3d5300835926103494a230ceaad3ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-29 17:32:26</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b3d5300835926103494a230ceaad3ea"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7b3d5300835926103494a230ceaad3ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-29 16:25:52</sys_created_on>
+        <sys_id>11bf5300835926103494a230ceaad3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-29 16:25:52</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

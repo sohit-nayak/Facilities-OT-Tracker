@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b25fcca6837022103494a230ceaad31f" label="OT Log" max_length="40" name="x_1120851_ottrack_ot_log" type="collection">
+        <element label="Hours Worked" max_length="20" name="hours_worked" type="decimal"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Request Line" max_length="32" name="request_line" reference="x_1120851_ottrack_ot_request_line" type="reference"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="request_line"/>
+        </index>
+    </element>
+</database>

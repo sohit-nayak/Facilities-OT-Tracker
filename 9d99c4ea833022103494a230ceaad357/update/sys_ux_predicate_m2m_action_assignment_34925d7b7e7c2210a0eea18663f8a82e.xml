@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_predicate_m2m_action_assignment">
+    <sys_ux_predicate_m2m_action_assignment action="INSERT_OR_UPDATE">
+        <declarative_action_assignment display_value="reject">c1925d7b677c221005e1f7a23457f35d</declarative_action_assignment>
+        <predicate display_value="My tasks requested item">f8925d7b5c7c2210a7d4114e86e65736</predicate>
+        <sys_class_name>sys_ux_predicate_m2m_action_assignment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 01:15:06</sys_created_on>
+        <sys_id>34925d7b7e7c2210a0eea18663f8a82e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_predicate_m2m_action_assignment_34925d7b7e7c2210a0eea18663f8a82e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 01:15:06</sys_updated_on>
+    </sys_ux_predicate_m2m_action_assignment>
+</record_update>

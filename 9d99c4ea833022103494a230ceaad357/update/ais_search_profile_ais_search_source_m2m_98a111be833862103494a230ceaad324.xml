@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="facilities-ot-tracker Search Profile">62915d7eb6386210d032d55dc73e581b</profile>
+        <search_source display_value="OT Request">58a111be833862103494a230ceaad320</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 22:37:01</sys_created_on>
+        <sys_id>98a111be833862103494a230ceaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>facilities-ot-tracker Search Profile.OT Request</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_98a111be833862103494a230ceaad324</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 22:37:01</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>
