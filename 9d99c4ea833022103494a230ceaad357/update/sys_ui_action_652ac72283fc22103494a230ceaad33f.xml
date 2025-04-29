@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.request_state == 'Draft'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Populate Employees</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var dept = current.shop_type_dept;
+var user = new GlideRecord('sys_user');
+user.addQuery('cost_center', dept);
+user.query();
+
+var empList = [];
+
+while(user.next()) {
+	var emp = user.sys_id.toString();
+
+	var agg = new GlideAggregate('x_1120851_ottrack_ot_log');
+	agg.query('employee', emp);
+	agg.addAggregate('SUM', 'hours_worked');
+
+	empList.push({employee: emp,
+	cumulative: parseFloat(agg.getAggregate('SUM', 'hours_worked')) || 0 });
+
+}
+
+empList.sort(function(a, b) {
+    return a.cumulative - b.cumulative;
+  });
+
+// create OT Line Requests for the request
+
+for(var i=0; i <= empList.length(); i++) {
+	
+	var line = new GlideRecord('x_1120851_ottrack_ot_request_line');
+	line.initialize();
+	line.ot_request = current.sys_id;
+	line.employee = empList[i].employee;
+	line.cumulative_ot_hours = empList[i].cumulative;
+	line.hours_worked = current.job_hours;
+	line.status = 'Pending';
+	line.insert();
+
+	gs.addInfoMessage('Employee list generated and sorted by cumulative OT hours.');
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 13:07:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>652ac72283fc22103494a230ceaad33f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Populate Employees</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ui_action_652ac72283fc22103494a230ceaad33f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-13 00:05:00</sys_updated_on>
+        <table>x_1120851_ottrack_ot_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>652ac72283fc22103494a230ceaad33f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-12 13:07:04</sys_created_on>
+        <sys_id>ef2f0be283fc22103494a230ceaad375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-12 13:07:04</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

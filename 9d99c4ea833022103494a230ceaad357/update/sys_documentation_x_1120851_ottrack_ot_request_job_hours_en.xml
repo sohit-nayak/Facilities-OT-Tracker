@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="job_hours" label="Job Hours" language="en" table="x_1120851_ottrack_ot_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>job_hours</element>
+            <help/>
+            <hint/>
+            <label>Job Hours</label>
+            <language>en</language>
+            <name>x_1120851_ottrack_ot_request</name>
+            <plural>Job Hours</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-12 22:05:53</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Job Hours</sys_name>
+            <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+            <sys_update_name>sys_documentation_x_1120851_ottrack_ot_request_job_hours_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 00:53:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

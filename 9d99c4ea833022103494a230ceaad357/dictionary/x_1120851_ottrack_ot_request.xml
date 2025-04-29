@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="34e900ee833022103494a230ceaad3c9" extends="task" label="OT Request" max_length="40" name="x_1120851_ottrack_ot_request" text_index="true" type="collection">
+        <element label="Reason/Work" mandatory="true" max_length="1000" name="reason_work" type="string"/>
+        <element label="Job Hours" mandatory="true" max_length="40" name="job_hours" type="integer"/>
+        <element label="Until" max_length="40" name="until" type="glide_date"/>
+        <element label="Manager Approval" max_length="40" name="manager_approval" read_only="true" type="boolean"/>
+        <element default="b5a5a953834922103494a230ceaad3f0" label="OT Request State" max_length="32" name="ot_request_state" reference="x_1120851_ottrack_request_type" type="reference"/>
+        <element choice="1" default="Draft" label="Request State" max_length="40" name="request_state" type="choice">
+            <choice/>
+        </element>
+        <element label="Number of Technicians Required" mandatory="true" max_length="40" name="number_of_technicians_required" type="integer"/>
+        <element label="Raised By" max_length="32" name="raised_by" reference="sys_user" type="reference"/>
+        <element label="Dept Head Approval" max_length="40" name="dept_head_approval" read_only="true" type="boolean"/>
+        <element label="Date Requested" mandatory="true" max_length="40" name="date_requested" type="glide_date"/>
+        <element label="From" max_length="40" name="from" type="glide_date"/>
+        <element label="Shop Type/Dept" mandatory="true" max_length="32" name="shop_type_dept" reference="sys_user_group" reference_qual="nameLIKEdispatch" reference_qual_condition="nameLIKEdispatch" type="reference"/>
+    </element>
+</database>
