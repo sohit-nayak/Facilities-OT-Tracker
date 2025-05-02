@@ -3,6 +3,7 @@
         <element label="Hours Worked" max_length="20" name="hours_worked" type="decimal"/>
         <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
         <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element label="Request Line" max_length="32" name="request_line" reference="x_1120851_ottrack_ot_request_line" type="reference"/>
         <index name="index">
             <element name="employee"/>

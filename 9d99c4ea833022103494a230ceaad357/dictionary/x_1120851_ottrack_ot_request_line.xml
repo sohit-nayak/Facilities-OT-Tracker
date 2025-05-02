@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="809e0866837022103494a230ceaad3b4" label="OT Request Line" max_length="40" name="x_1120851_ottrack_ot_request_line" type="collection">
         <element label="Selected" max_length="40" name="selected" type="boolean"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element label="Hours Worked" max_length="20" name="hours_worked" type="decimal"/>
         <element label="Cumulative OT Hours" max_length="20" name="cumulative_ot_hours" type="decimal"/>
         <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>

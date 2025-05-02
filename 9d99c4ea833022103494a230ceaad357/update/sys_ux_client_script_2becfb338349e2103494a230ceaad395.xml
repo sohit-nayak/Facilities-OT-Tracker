@@ -3,7 +3,7 @@
         <controller_preset/>
         <includes/>
         <macroponent display_value="Default">18d0f893834522103494a230ceaad33d</macroponent>
-        <name>New client script 1</name>
+        <name>Debug</name>
         <preset/>
         <required_translations>[]</required_translations>
         <script><![CDATA[/**
@@ -15,21 +15,21 @@
 */
 function handler({api, event, helpers, imports}) {
     console.log("Request ID: " + api.data.record.sysId);
-    api.data.record.sysId = -1;
+    console.log("Shop ID: " + api.data.record.form.fields.shop_type_dept.sysId);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-29 00:29:35</sys_created_on>
         <sys_id>2becfb338349e2103494a230ceaad395</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>New client script 1</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Debug</sys_name>
         <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
         <sys_policy/>
         <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
         <sys_update_name>sys_ux_client_script_2becfb338349e2103494a230ceaad395</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-29 00:40:53</sys_updated_on>
+        <sys_updated_on>2025-05-01 15:59:31</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
