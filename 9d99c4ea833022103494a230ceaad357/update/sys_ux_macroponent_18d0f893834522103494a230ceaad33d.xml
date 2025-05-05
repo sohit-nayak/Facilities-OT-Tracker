@@ -1032,7 +1032,7 @@
                                                 "operation": {
                                                     "dataBrokerId": "546cccd25310101024e5ddeeff7b123b",
                                                     "operationName": "REFRESH",
-                                                    "parentResourceId": "aggregation_query_1",
+                                                    "parentResourceId": "count_employees",
                                                     "payload": {
                                                         "type": "JSON_LITERAL",
                                                         "value": {}
@@ -1284,44 +1284,6 @@
                                             },
                                             "slot": null,
                                             "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "stylized_text_7",
-                                            "elementLabel": "Stylized text 7",
-                                            "eventMappings": [],
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": false
-                                            },
-                                            "preset": null,
-                                            "propertyValues": {
-                                                "configAria": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": {}
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "h3"
-                                                },
-                                                "text": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "comment": "",
-                                                        "message": "Make your selections"
-                                                    }
-                                                }
-                                            },
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -1334,10 +1296,6 @@
                                                         "margin-right": "0",
                                                         "padding-right": "0"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_7",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "root": null,
@@ -1840,6 +1798,44 @@
                                     "composition": [
                                         {
                                             "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "stylized_text_7",
+                                            "elementLabel": "Stylized text 7",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": false
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { }"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "h3"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Make your selections"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
                                                 "id": "REPEATER",
                                                 "type": "REPEATER"
                                             },
@@ -1953,7 +1949,165 @@
                                                                     },
                                                                     "elementId": "checkbox_1",
                                                                     "elementLabel": "Checkbox 1",
-                                                                    "eventMappings": [],
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "cmaiihhneeslaabbyjddbiiffehggzfhheu",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_checkbox.NOW_CHECKBOX#CHECKED_SET",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventDefinition": {
+                                                                                "apiName": "sn_checkbox.NOW_CHECKBOX#CHECKED_SET",
+                                                                                "id": null,
+                                                                                "type": "UXEVENT"
+                                                                            },
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "propName": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "numEmployeesAdressed"
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "operation": {
+                                                                                                        "left": {
+                                                                                                            "binding": {
+                                                                                                                "address": [
+                                                                                                                    "numEmployeesAdressed"
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "type": "STATE_BINDING"
+                                                                                                        },
+                                                                                                        "operator": "ADD",
+                                                                                                        "right": {
+                                                                                                            "type": "JSON_LITERAL",
+                                                                                                            "value": 1
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "type": "BINARY"
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiihhneeslaabbykddbiiffkjjccptxgb",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {
+                                                                                                "propName": "isCurrentSkipped",
+                                                                                                "value": false
+                                                                                            }
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiiiiffccchhaaccbbeeddbiiffseeiitabpm",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {
+                                                                                                "propName": "isReason",
+                                                                                                "value": false
+                                                                                            }
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiiiiffjjdfaaccbbfddbiiffjpffmaaffs",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                                                        "operationName": "EXECUTE",
+                                                                                        "parentResourceId": "update_ot_line_record",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "recordId": {
+                                                                                                    "binding": {
+                                                                                                        "address": [
+                                                                                                            "_row_data",
+                                                                                                            "uniqueValue"
+                                                                                                        ],
+                                                                                                        "category": "value"
+                                                                                                    },
+                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                },
+                                                                                                "table": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "x_1120851_ottrack_ot_request_line"
+                                                                                                },
+                                                                                                "templateFields": {
+                                                                                                    "transform": {
+                                                                                                        "operands": {
+                                                                                                            "container": [
+                                                                                                                {
+                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                    "value": "selected="
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "binding": {
+                                                                                                                        "address": [
+                                                                                                                            "selected",
+                                                                                                                            "value"
+                                                                                                                        ],
+                                                                                                                        "category": "value"
+                                                                                                                    },
+                                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "type": "LIST_CONTAINER"
+                                                                                                        },
+                                                                                                        "operator": "CONCAT"
+                                                                                                    },
+                                                                                                    "type": "CLIENT_TRANSFORM"
+                                                                                                },
+                                                                                                "useSetDisplayValue": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "cmaiiiixxbddaacceeqddbiiffaccucffyiig",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
                                                                     "isHidden": {
                                                                         "type": "JSON_LITERAL",
                                                                         "value": null
@@ -2033,7 +2187,105 @@
                                                                     },
                                                                     "elementId": "checkbox_2",
                                                                     "elementLabel": "Checkbox 2",
-                                                                    "eventMappings": [],
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "cmaiiiiggxddiiaaccbbrddbiiffjffwbggbfi",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_checkbox.NOW_CHECKBOX#CHECKED_SET",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventDefinition": {
+                                                                                "apiName": "sn_checkbox.NOW_CHECKBOX#CHECKED_SET",
+                                                                                "id": null,
+                                                                                "type": "UXEVENT"
+                                                                            },
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {
+                                                                                                "propName": "isCurrentSkipped",
+                                                                                                "value": "true"
+                                                                                            }
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiiiiggxddiiaaccbbsddbiiffyrbcvhhvz",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                                                        "operationName": "EXECUTE",
+                                                                                        "parentResourceId": "update_ot_line_record",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "recordId": {
+                                                                                                    "binding": {
+                                                                                                        "address": [
+                                                                                                            "_row_data",
+                                                                                                            "uniqueValue"
+                                                                                                        ],
+                                                                                                        "category": "value"
+                                                                                                    },
+                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                },
+                                                                                                "table": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "x_1120851_ottrack_ot_request_line"
+                                                                                                },
+                                                                                                "templateFields": {
+                                                                                                    "transform": {
+                                                                                                        "operands": {
+                                                                                                            "container": [
+                                                                                                                {
+                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                    "value": "skip="
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "binding": {
+                                                                                                                        "address": [
+                                                                                                                            "skip",
+                                                                                                                            "value"
+                                                                                                                        ],
+                                                                                                                        "category": "value"
+                                                                                                                    },
+                                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "type": "LIST_CONTAINER"
+                                                                                                        },
+                                                                                                        "operator": "CONCAT"
+                                                                                                    },
+                                                                                                    "type": "CLIENT_TRANSFORM"
+                                                                                                },
+                                                                                                "useSetDisplayValue": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "cmaiiiizfojaaccggqddbiiffjjpwhhrxrs",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
                                                                     "isHidden": {
                                                                         "type": "JSON_LITERAL",
                                                                         "value": null
@@ -2113,7 +2365,145 @@
                                                                     },
                                                                     "elementId": "dropdown_1",
                                                                     "elementLabel": "Dropdown 1",
-                                                                    "eventMappings": [],
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "cmaiiiibffaaaaacccciiddbiiffyeezstsbbp",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventDefinition": {
+                                                                                "apiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                                                "id": null,
+                                                                                "type": "UXEVENT"
+                                                                            },
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {
+                                                                                                "propName": "isReason",
+                                                                                                "value": "true"
+                                                                                            }
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiiiibffaaaaaccccjjddbiiffffpddonndk",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": {
+                                                                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "propName": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "numEmployeesAdressed"
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "operation": {
+                                                                                                        "left": {
+                                                                                                            "binding": {
+                                                                                                                "address": [
+                                                                                                                    "numEmployeesAdressed"
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "type": "STATE_BINDING"
+                                                                                                        },
+                                                                                                        "operator": "ADD",
+                                                                                                        "right": {
+                                                                                                            "type": "JSON_LITERAL",
+                                                                                                            "value": 1
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "type": "BINARY"
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        },
+                                                                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                                    },
+                                                                                    "operation": null,
+                                                                                    "targetId": "cmaiiiibyjkaacccclddbiiffggriiuwkhx",
+                                                                                    "type": "EVENT"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                                                        "operationName": "EXECUTE",
+                                                                                        "parentResourceId": "update_ot_line_record",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "recordId": {
+                                                                                                    "binding": {
+                                                                                                        "address": [
+                                                                                                            "_row_data",
+                                                                                                            "uniqueValue"
+                                                                                                        ],
+                                                                                                        "category": "value"
+                                                                                                    },
+                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                },
+                                                                                                "table": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "x_1120851_ottrack_ot_request_line"
+                                                                                                },
+                                                                                                "templateFields": {
+                                                                                                    "transform": {
+                                                                                                        "operands": {
+                                                                                                            "container": [
+                                                                                                                {
+                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                    "value": "skip_reason="
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "binding": {
+                                                                                                                        "address": [
+                                                                                                                            "skip_reason",
+                                                                                                                            "displayValue"
+                                                                                                                        ],
+                                                                                                                        "category": "value"
+                                                                                                                    },
+                                                                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "type": "LIST_CONTAINER"
+                                                                                                        },
+                                                                                                        "operator": "CONCAT"
+                                                                                                    },
+                                                                                                    "type": "CLIENT_TRANSFORM"
+                                                                                                },
+                                                                                                "useSetDisplayValue": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "cmaiijjbbweewaacciiwddbiiffmvelddjjocc",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
                                                                     "isHidden": {
                                                                         "type": "JSON_LITERAL",
                                                                         "value": null
@@ -2389,6 +2779,10 @@
                                         "default": {
                                             "children": null,
                                             "items": [
+                                                {
+                                                    "element_id": "stylized_text_7",
+                                                    "styles": {}
+                                                },
                                                 {
                                                     "element_id": "repeater_3",
                                                     "styles": {}
@@ -3130,7 +3524,7 @@
                         "total": {
                             "binding": {
                                 "address": [
-                                    "aggregation_query_1",
+                                    "count_employees",
                                     "output",
                                     "data",
                                     "GlideAggregate_Query",
@@ -3635,7 +4029,7 @@
                                                                         "operation": {
                                                                             "dataBrokerId": "546cccd25310101024e5ddeeff7b123b",
                                                                             "operationName": "REFRESH",
-                                                                            "parentResourceId": "aggregation_query_1",
+                                                                            "parentResourceId": "count_employees",
                                                                             "payload": {
                                                                                 "type": "JSON_LITERAL",
                                                                                 "value": {}
@@ -4043,8 +4437,8 @@
             "id": "546cccd25310101024e5ddeeff7b123b",
             "type": "GRAPHQL"
         },
-        "elementId": "aggregation_query_1",
-        "elementLabel": "Aggregation Query 1",
+        "elementId": "count_employees",
+        "elementLabel": "Count of Employees",
         "eventMappings": [],
         "inputValues": {
             "avgField": {
@@ -4731,7 +5125,63 @@
         },
         "elementId": "look_up_ot_lines",
         "elementLabel": "Look up OT Lines",
-        "eventMappings": [],
+        "eventMappings": [
+            {
+                "eventMappingId": "cmaiiiigeejjsaaccddlddbiiffaazgghhjaem",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "isCurrentSkipped",
+                                    "value": false
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "cmaiiiigeejjsaaccddmddbiiffnkeebboddmp",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "isReason",
+                                    "value": false
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "cmaiiiighfgaaccddwddbiiffwshhnjjhhiijj",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
         "inputValues": {
             "encodedQuery": {
                 "transform": {
@@ -4757,8 +5207,12 @@
                 "type": "CLIENT_TRANSFORM"
             },
             "limit": {
-                "type": "JSON_LITERAL",
-                "value": "10"
+                "binding": {
+                    "address": [
+                        "numEmployeesAdressed"
+                    ]
+                },
+                "type": "STATE_BINDING"
             },
             "offset": {
                 "type": "JSON_LITERAL",
@@ -4790,6 +5244,105 @@
             }
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "546cccd25310101024e5ddeeff7b123b",
+            "type": "GRAPHQL"
+        },
+        "elementId": "aggregation_query_2",
+        "elementLabel": "Aggregation Query 2",
+        "eventMappings": [],
+        "inputValues": {
+            "avgField": {
+                "type": "JSON_LITERAL"
+            },
+            "encodedQuery": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "ot_request="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "record",
+                                        "sysId"
+                                    ]
+                                },
+                                "type": "DATA_OUTPUT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "groupBy": {
+                "type": "JSON_LITERAL"
+            },
+            "having": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "maxField": {
+                "type": "JSON_LITERAL"
+            },
+            "minField": {
+                "type": "JSON_LITERAL"
+            },
+            "orderBy": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "queryCategory": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "returnRowCount": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "sumField": {
+                "type": "JSON_LITERAL"
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_1120851_ottrack_ot_request_line"
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "9b4b978353211010cbc2ddeeff7b1245",
+            "type": "GRAPHQL"
+        },
+        "elementId": "update_ot_line_record",
+        "elementLabel": "Update OT Line Record",
+        "eventMappings": [],
+        "inputValues": {
+            "recordId": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "templateFields": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "useSetDisplayValue": {
+                "type": "JSON_LITERAL",
+                "value": null
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
     }
 ]</data>
         <description/>
@@ -4977,20 +5530,64 @@
         "name": "groupID",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "fieldType": "number",
+        "id": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 1
+        },
+        "name": "numEmployeesAdressed",
+        "shape": "",
+        "valueType": "number"
+    },
+    {
+        "fieldType": "boolean",
+        "id": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "name": "isCurrentSkipped",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "fieldType": "boolean",
+        "id": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "name": "isReason",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "fieldType": "boolean",
+        "id": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "name": "isSelected",
+        "shape": "",
+        "valueType": "boolean"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-26 19:46:19</sys_created_on>
         <sys_id>18d0f893834522103494a230ceaad33d</sys_id>
-        <sys_mod_count>103</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
         <sys_policy/>
         <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
         <sys_update_name>sys_ux_macroponent_18d0f893834522103494a230ceaad33d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-02 02:44:31</sys_updated_on>
+        <sys_updated_on>2025-05-03 13:37:54</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=18d0f893834522103494a230ceaad33d"/>
 </record_update>
