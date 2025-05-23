@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">18d0f893834522103494a230ceaad33d</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log("hola hola");
+    console.log(event.elementId);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-07 00:05:51</sys_created_on>
+        <sys_id>2f278dee839922103494a230ceaad3fa</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_client_script_2f278dee839922103494a230ceaad3fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-07 00:41:44</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
