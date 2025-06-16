@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Manager">889c42ce833122103494a230ceaad388</macroponent>
+        <name>Update OT Lines</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    
+    var elementId = event.elementId;
+
+    var sysId = event.context.item.value._row_data.uniqueValue;
+
+    var value = event.payload.value;
+    c// onsole.log(elementId + " :: " + sysId);
+    
+    
+    let updatedData = JSON.parse(JSON.stringify(api.state.updatedData));
+
+    
+    let element = updatedData[sysId] || {};
+    element[elementId] = value;
+    updatedData[sysId] = element;
+    api.setState('updatedData', updatedData);
+    console.log(updatedData);
+    
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 12:01:55</sys_created_on>
+        <sys_id>c59cc2ce833122103494a230ceaad3eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update OT Lines</sys_name>
+        <sys_package display_value="Facilities OT Tracker" source="x_1120851_ottrack">9d99c4ea833022103494a230ceaad357</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities OT Tracker">9d99c4ea833022103494a230ceaad357</sys_scope>
+        <sys_update_name>sys_ux_client_script_c59cc2ce833122103494a230ceaad3eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 12:01:55</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
